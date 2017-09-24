@@ -23,4 +23,3 @@ GLOBAL_FILENAME=global_windows.bed # name of output file
 
 # on the global window file delete "noise" windows and collect fetures for future analysis
 python3 window_sort.py $FOLDER $GLOBAL_FILENAME $BAM_COUNT
-# another test for version control...VC
