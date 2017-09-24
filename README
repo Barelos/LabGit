@@ -4,3 +4,7 @@ Importent:
 2) get data on local windows in "easy to work with" format
 
 Can wait:
+
+FORMATS <INDEX>) <TYPE>: <LINE FORMAT> <DELIMITER>:
+1) Global windows: (chromosome)	(start) (end) (length) (sum number of hits for each base pair) (strand) \t
+1) Global windows: (chromosome)	(line in the global file for the global window) (start) (end) (length) (sum number of hits for each base pair) (max value) (variance) (strand) \t
