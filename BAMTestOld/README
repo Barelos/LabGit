@@ -1,0 +1,6 @@
+barel levy barel.levy@mail.huji.ac.il
+
+A program that get the output of samtools depth and display the data
+
+TODO: add a way to add data to each sequence i.e: num_reads, length, ...
+TODO: in order to do that change: find_seq, make_bed
