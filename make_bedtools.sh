@@ -22,6 +22,6 @@ done
 # sort the global file in order to use merge on it
 sort -k 1,1 -k2,2n $FOLDER/$OUTPUT > $FOLDER/sorted_$OUTPUT # before merge
 # TODO add or remove the "-d $JUMP" ? example V:6146-7537
-bedtools merge -d $JUMP -s -i $FOLDER/sorted_$OUTPUT | awk '{printf("%s\t%s\t%s\t%s\t%s\t%s\n", $1, $2, $3, $3 - $2, $4, $4)}' > $FOLDER/$OUTPUT # this are the global windows 
+bedtools merge -d $JUMP -c 5 -o sum -s -i $FOLDER/sorted_$OUTPUT | awk '{printf("%s\t%s\t%s\t%s\t%s\t%s\n", $1, $2, $3, $3 - $2, $5, $4)}' > $FOLDER/$OUTPUT # this are the global windows 
 
 echo "Done making BED files"
